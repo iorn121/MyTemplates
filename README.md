@@ -20,13 +20,13 @@ npm run dev
 
 ## Scripts
 
-| コマンド | 内容 |
-| --- | --- |
-| `npm run dev` | 開発サーバー起動 |
-| `npm run build` | 静的ファイルをビルド |
-| `npm run preview` | ビルド結果をプレビュー |
-| `npm run lint` | ESLintでコードチェック |
-| `npm run format` | Prettierでフォーマット |
+| コマンド            | 内容                            |
+| ------------------- | ------------------------------- |
+| `npm run dev`       | 開発サーバー起動                |
+| `npm run build`     | 静的ファイルをビルド            |
+| `npm run preview`   | ビルド結果をプレビュー          |
+| `npm run lint`      | ESLintでコードチェック          |
+| `npm run format`    | Prettierでフォーマット          |
 | `npm run typecheck` | 型チェック（astro check + tsc） |
 
 ## Structure
