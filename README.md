@@ -1,61 +1,53 @@
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+# astro-prototype-template
 
-分かりやすくてカッコイイ名前をつける
+Astro + React + Tailwind + nanostores + View Transitions を統合したプロトタイプ開発用テンプレート。
 
-"hoge"が何かを簡潔に紹介する
+## Stack
 
-# Workflow
+- [Astro](https://astro.build/) v5 — ページルーティング / View Transitions / コンテンツコレクション
+- [React](https://react.dev/) v18 — インタラクティブなUIコンポーネント（Islands）
+- [Tailwind CSS](https://tailwindcss.com/) v3 — ユーティリティファーストなスタイリング
+- [nanostores](https://github.com/nanostores/nanostores) — アイランド間の軽量状態管理
+- [Framer Motion](https://www.framer.com/motion/) — アニメーション
+- [Lucide React](https://lucide.dev/) — アイコン
 
-* [ ] TODO
-
-# Demo
-
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
-
-# Features
-
-"hoge"のセールスポイントや差別化などを説明する
-
-# Requirement
-
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
-
-# Installation
-
-Requirementで列挙したライブラリなどのインストール方法を説明する
+## Usage
 
 ```bash
-pip install huga_package
+npm install
+npm run dev
 ```
 
-# Usage
+## Scripts
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+| コマンド | 内容 |
+| --- | --- |
+| `npm run dev` | 開発サーバー起動 |
+| `npm run build` | 静的ファイルをビルド |
+| `npm run preview` | ビルド結果をプレビュー |
+| `npm run lint` | ESLintでコードチェック |
+| `npm run format` | Prettierでフォーマット |
+| `npm run typecheck` | 型チェック（astro check + tsc） |
 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+## Structure
+
+```
+src/
+├── content/
+│   ├── config.ts       # コンテンツコレクションの型定義
+│   └── questions/      # Markdownコンテンツ置き場
+├── layouts/
+│   └── Layout.astro    # View Transitions込みの共通レイアウト
+├── pages/
+│   └── index.astro     # トップページ
+├── store/
+│   └── global.ts       # nanostoresによるグローバル状態
+└── styles/
+    └── global.css      # Tailwindベース + カスタムアニメーション
 ```
 
-# Note
+## GitHub Template として使う
 
-注意点などがあれば書く
-
-# Author
-
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
-
-# License
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-"hoge" is Confidential.
+1. GitHubのリポジトリ設定で **"Template repository"** を有効にする
+2. 新規プロジェクト作成時に **"Use this template"** を選択
+3. `npm install` して開発開始

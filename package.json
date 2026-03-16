@@ -1,0 +1,46 @@
+{
+  "name": "astro-prototype-template",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "astro check && tsc --noEmit"
+  },
+  "dependencies": {
+    "@astrojs/react": "^5.0.0",
+    "@nanostores/react": "^0.8.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "astro": "^5.0.0",
+    "framer-motion": "^12.0.0",
+    "lucide-react": "^0.577.0",
+    "nanostores": "^0.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@eslint/js": "^9.0.0",
+    "astro-eslint-parser": "^1.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-astro": "^1.6.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.0.0",
+    "prettier": "^3.8.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.7.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.0.0"
+  }
+}
